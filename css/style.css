@@ -1,0 +1,112 @@
+.parentHome,.links,.fori{
+   height: 100vh;
+}
+.links a{
+   color: black;
+}
+img{
+   width: 100%;
+   
+  
+}
+.col-2{
+   left: -230px;
+}
+.col-1{ 
+position: fixed;
+left:0px;
+top: -50px;
+}
+.col-1 i{
+cursor: pointer;
+}
+
+.slideDU{
+   cursor: pointer;
+}
+.area{
+   cursor: pointer;
+}
+.slideWhite{
+   transition: all 1s;
+   top: 100%;
+   bottom: 0px;
+   right: 7px;
+   left: 7px;
+   opacity: 0.7;
+   
+   
+}
+.slideDU:hover .slideWhite{
+   top: 0;
+   transition: all 3s;
+
+}
+.truncate {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; 
+           line-clamp: 2;
+   -webkit-box-orient: vertical;
+}
+.ing{
+   cursor: pointer;
+}
+.area:hover{
+background-color: aliceblue;
+}
+.area i {
+   color: white;
+}
+.area p{
+   color: white;
+}
+.area:hover p{
+   color: black;
+}
+.area:hover i{
+   color: black;
+}
+.sHeight{
+   height:100vh ;
+}
+.zz{
+   z-index: 9999;
+}
+.loader {
+   position: relative;
+   width: 64px;
+   height: 60px;
+ }
+ .loader::after {
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   background: #fff;
+   width: 64px;
+   height: 32px;
+   border-radius: 0 0 50px 50px;
+   animation: move 0.5s linear infinite alternate;
+ }
+ .loader::before {
+   content: '';
+   position: absolute;
+   left: 50%;
+   top: 0;
+   background: #FF3D00;
+   width: 24px;
+   height: 24px;
+   transform: translateX(-50%) rotate(0deg);
+   animation: rotate 2s linear infinite;
+ }
+ 
+ @keyframes rotate {
+   100% { transform: translateX(-50%) rotate(360deg)}
+ }
+ @keyframes move {
+   0% { transform: rotate(10deg)}
+   100% { transform: rotate(-10deg)}
+ }
+       
